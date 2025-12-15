@@ -22,10 +22,7 @@ jobs:
    - name: Run a one line scipts
      run: echo Hello, world
 
-    - name: Run multi line script
-      run: |
-     echo add another action to build
-     echo test and deploy your project
+   
 
      
      
