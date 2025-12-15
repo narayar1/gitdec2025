@@ -1,0 +1,47 @@
+name: CI
+
+on:
+ push: 
+   branches: [main, dev]
+   
+ pull_request:
+   branches: [main]
+
+ workflow_dispatch:
+
+jobs:
+
+ build-and-release:
+
+  runs-on: windows-latest
+ 
+  steps:
+  
+   - uses: actions/checkout@v3
+
+   - name: Run a one line scipts
+     run: echo Hello, world
+
+    - name: Run multi line script
+      run: |
+     echo add another action to build
+     echo test and deploy your project
+
+     
+     
+  
+
+     
+     
+
+     
+
+
+    
+
+  
+
+  
+
+
+ 
